@@ -40,6 +40,7 @@ ssh-keyscan -H github.com >> ~/.ssh/known_hosts 2> /dev/null
 cp "$ENV_DIR/GIT_SSH_KEY" ~/.ssh/id_rsa
 echo >> ~/.ssh/id_rsa
 chmod 600 ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa
 
 # ignore/hide ssh warnings
 echo "Host *" >> ~/.ssh/config
