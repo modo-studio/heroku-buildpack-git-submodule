@@ -53,7 +53,7 @@ echo "-----> Init ssh-agent"
 eval "$(ssh-agent -s)"
 
 echo "-----> Adding ssh key"
-ssh-add -K ~/.ssh/id_rsa
+ssh-add ~/.ssh/id_rsa
 
 echo "-----> Show fingerprint"
 ssh-add -l -E sha256
